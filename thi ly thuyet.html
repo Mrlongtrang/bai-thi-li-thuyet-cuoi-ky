@@ -9,6 +9,29 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <script type="text/javascript" src="thi ly thuyet.js"></script>
+        <script type="text/javascript">
+         const btn= document.getElementById('btn')
+
+const lowerNumber = parseInt(prompt('Enter lower number: '));
+const higherNumber = parseInt(prompt('Enter higher number: '));
+
+document.writeln(`Số nguyên tố của ${lowerNumber} và ${higherNumber} là: `);
+
+for (let i = lowerNumber; i <= higherNumber; i++) {
+    let flag = 0;
+
+    for (let j = 2; j < i; j++) {
+        if (i % j == 0) {
+            flag = 1;
+            break;
+        }
+    }
+
+
+    if (i > 1 && flag == 0) {
+        document.writeln(i);
+    }
+}
+        </script>
     </body>
 </html>

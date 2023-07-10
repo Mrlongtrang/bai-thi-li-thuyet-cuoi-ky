@@ -1,76 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
-* {box-sizing: border-box;}
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+.name {
+    font-size: 24px;
+    font-weight: 600;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: white;
+.tag {
+ padding: 4px 8px;
+ border: 1px solid gray;
+ border-radius: 50px;
+ font-weight: 600;
+ font-size:12px;
+ color:#6DD5FA;
+ background-color: white;
+}
+.btn{
+border: none;
+outline: none;
+padding: 30px 50px;
+background-color: white;
+cursor: pointer;
 }
 
-.topnav a {
-  float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.active, .btn:hover {
+    background-color:#eaafc8;
+    color: black;
 }
 
-.topnav a:hover {
-  background-color: white;
-  color: black;
+.info{
+    font-family: 'Montserrat', sans-serif;
 }
 
-.topnav a.active {
-  background-color: #2196F3;
-  color: white;
+.col-4 {
+    background-color:#FBFCFF;
+    border-radius: 5px;
 }
 
-.topnav .search-container {
-  float: left;
+.avatar {
+padding-right: 70%;
+padding-top: 6%;
 }
 
-.topnav input[type=text] {
-  float: left;
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
+.header {
+    display:flex;
+}
+.bnt-header {
+    flex-direction: row-reverse;
+    padding-left:25%;
+    padding-top: 50px;
 }
 
-.topnav .search-container button {
-  float: left;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
+.search{
+  padding: 20px;
+  margin-top: 20px;
 }
 
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
+.heade-user{
+  padding-left: 16%;
 }
